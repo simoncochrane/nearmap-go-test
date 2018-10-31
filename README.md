@@ -55,7 +55,7 @@ Complete `main()` to test your `DataSource` implementation; it must:
     | key8         | value8        |
     | key9         | value9        |
 </pre>
-* Use 10 goroutines, each making 50 consecutive requests for a random key in the range (key0-key9). I.e. there should be a total of 500 requests. Each goroutine should have its own instance of `DataSource`.
+* Use 10 goroutines, each making 50 consecutive requests for a random key in the range (key0-key9). I.e. there should be a total of 500 requests.
 * For each request, print the requested key name, returned value, time to complete that request; similar to the following example:
 <pre>
     [1] Request 'key1', response 'value1', time: 50.05 ms
