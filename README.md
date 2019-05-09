@@ -11,7 +11,7 @@ The source code that you are given is a very simple imitation of a key/value sto
 
 This scenario is a simplified example of a typical high performance server cluster with a database, a distributed cache and multiple worker nodes.
 
-## Assumptions 
+## Assumptions
 
 After startup:
 
@@ -21,7 +21,7 @@ After startup:
 
 ## Task
 
-Complete the 2 parts below & submit the solution. 
+Complete the 2 parts below & submit the solution.
 If the solution is incomplete, please state what hasn't been finished and outline how you are planning on solving it.
 
 * Provided code can be modified at will.
@@ -55,7 +55,7 @@ Complete `main()` to test your `DataSource` implementation; it must:
     | key8         | value8        |
     | key9         | value9        |
 </pre>
-* Use 10 goroutines, each making 50 consecutive requests for a random key in the range (key0-key9). I.e. there should be a total of 500 requests.
+* Use 10 goroutines (simulating separate worker nodes) each making 50 consecutive requests for a random key in the range (key0-key9). I.e. there should be a total of 500 requests.
 * For each request, print the requested key name, returned value, time to complete that request; similar to the following example:
 <pre>
     [1] Request 'key1', response 'value1', time: 50.05 ms
@@ -65,5 +65,5 @@ Complete `main()` to test your `DataSource` implementation; it must:
 
 ## Submission instructions
 
-* **DO NOT** fork this repository or create pull requests on it, because we don't want other candidates to see your solution.
+* **DO NOT** fork this repository or create pull requests on it as we don't want other candidates to see your solution.
 * Provide your solution as a `.zip` or .`gz` archive file, either via email or some Dropbox-like service, to your Nearmap contact.
